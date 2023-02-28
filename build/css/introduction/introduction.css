@@ -1,0 +1,6 @@
+.section__introduction h1 {
+  text-align: center;
+}
+.section__introduction .section__introduction--img img {
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "04bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "Challenge FrontendMentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrtegaRamiro31/bookmark.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Sass",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Ramiro Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrtegaRamiro31/bookmark/issues"
+  },
+  "homepage": "https://github.com/OrtegaRamiro31/bookmark#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
+}
