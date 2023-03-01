@@ -1,0 +1,81 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+.section__downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section__downloads--container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  @include m.desktop {
+    flex-direction: row;
+  }
+}
+
+.container-browser2 {
+  @include m.tablet {
+    margin-top: 5rem;
+  }
+}
+.container-browser3 {
+  @include m.tablet {
+    margin-top: 10rem;
+  }
+}
+.section__downloads--browser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  //   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  box-shadow: 0 1.3rem 2rem 0.1rem rgba(v.$grayishBlue, 0.2);
+  border-radius: 1rem;
+  height: 40rem;
+
+  .section__downloads--description {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+    h3,
+    p {
+      margin: 0;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .section__downloads--install {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.5rem;
+    place-content: center;
+
+    img {
+      margin: auto;
+    }
+    a {
+      display: block;
+      grid-row: 2/4;
+      text-decoration: none;
+      text-align: center;
+      background-color: v.$softBlue;
+      border: none;
+      color: v.$white;
+      padding: 2rem 1rem;
+      border-radius: 1rem;
+      width: 90%;
+      margin: auto;
+
+      &:hover {
+        background-color: v.$white;
+        color: v.$softBlue;
+        border: 0.1rem solid v.$softBlue;
+      }
+    }
+  }
+}

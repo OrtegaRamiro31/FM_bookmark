@@ -1,0 +1,109 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.header {
+  margin: 5rem auto 0 auto;
+  .header__default {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ListMenu__links--nav {
+      display: none;
+      @include m.desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+      }
+
+      a {
+        @include m.tablet {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: lighten(v.$veryDarkBlue, 20%);
+          padding: 1rem 1rem;
+          font-weight: 500;
+        }
+        &:hover {
+          color: v.$softRed;
+        }
+        &:last-of-type {
+          background-color: v.$softRed;
+          border-radius: 0.7rem;
+          color: v.$white;
+          box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+          border: 0.1rem solid transparent;
+        }
+        &:last-of-type:hover {
+          background-color: v.$white;
+          color: v.$softRed;
+          border: 0.1rem solid v.$softRed;
+        }
+      }
+    }
+    .header__default--iconHamburger {
+      @include m.desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+.header__hideListMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(v.$veryDarkBlue, 90%);
+}
+
+.header__hideListMenu--container {
+  width: 80%;
+  margin: auto;
+  .hideListMenu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .hideListMenu__links--nav {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    // gap: 2.4rem;
+
+    a:first-of-type {
+      border-top: 1px solid v.$grayishBlue;
+    }
+
+    a {
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      color: v.$white;
+      text-decoration: none;
+      font-size: 2.5rem;
+      border-bottom: 1px solid v.$grayishBlue;
+      padding: 2.5rem 0;
+    }
+
+    a:last-of-type {
+      margin-top: 2.5rem;
+      border: 3px solid v.$white;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.hideListMenu__socialMedia {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

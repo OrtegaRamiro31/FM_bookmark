@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+/* Font */
+$font: "Rubik", sans-serif;
+
+/* Colors*/
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+// Primary
+$softBlue: hsl(231, 69%, 60%);
+$softRed: hsl(0, 94%, 66%);
+
+// Neutral
+$grayishBlue: hsl(229, 8%, 60%);
+$veryDarkBlue: hsl(229, 31%, 21%);
+
+// Tamaños de Media Queries
+$telefono: 375px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
