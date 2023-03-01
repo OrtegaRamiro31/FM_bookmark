@@ -356,7 +356,7 @@ body::after {
 }
 @media (min-width: 992px) {
   body::after {
-    top: 20rem;
+    top: 25rem;
     height: 35rem;
     width: 60rem;
   }
@@ -624,6 +624,7 @@ p {
   .section__features--buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4rem;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -664,7 +665,7 @@ p {
   border: none;
   width: 60%;
   color: hsl(229deg, 8%, 60%);
-  transition: border 0.1s;
+  transition: border 0.2s;
 }
 .section__features--buttons .btnActive {
   color: hsl(229deg, 31%, 21%);
@@ -694,32 +695,45 @@ p {
     grid-column: 1/3;
   }
 }
+@media (min-width: 992px) {
+  .section__features--Info .features__ilustrations {
+    height: 50rem;
+  }
+}
 .section__features--Info .features__ilustrations img {
-  margin: auto;
   width: 80%;
+  margin: auto;
 }
 @media (min-width: 992px) {
   .section__features--Info .features__ilustrations img {
-    width: 50rem;
+    height: 50rem;
+    width: 60rem;
   }
 }
 .section__features--Info .features__ilustrations::after {
   content: "";
   position: absolute;
   left: -10rem;
-  bottom: -1rem;
-  width: 95%;
+  bottom: -2rem;
+  width: 35rem;
   height: 95%;
   background: hsl(231deg, 69%, 60%);
   z-index: -1;
   border-top-right-radius: 30% 50%;
   border-bottom-right-radius: 30% 50%;
 }
+@media (min-width: 768px) {
+  .section__features--Info .features__ilustrations::after {
+    width: 45rem;
+    height: 22rem;
+  }
+}
 @media (min-width: 992px) {
   .section__features--Info .features__ilustrations::after {
     left: -20rem;
-    bottom: -2rem;
-    width: 75%;
+    bottom: -7rem;
+    height: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
