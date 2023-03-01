@@ -733,7 +733,7 @@ p {
     left: -20rem;
     bottom: -7rem;
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
 }
 @media (min-width: 768px) {
